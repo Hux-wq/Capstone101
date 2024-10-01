@@ -116,7 +116,12 @@
                 <div class="row">
                   <div class="col-lg-3 col-md-4 label">Section</div>
                   <div class="col-lg-9 col-md-8">{{ $student->section }}</div>
-              </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 label">Program</div>
+                  <div class="col-lg-9 col-md-8">{{ $student->program }}</div>
+                </div>
 
               </div>
 

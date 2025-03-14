@@ -1261,3 +1261,16 @@ h6 {
   font-size: 13px;
   color: #012970;
 }
+
+.banner-login {
+ 
+  background-image: url('../img/banner-login.jfif');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+  filter:  brightness(70%);
+  z-index: -1 !important;
+} 
+

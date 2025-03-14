@@ -10,6 +10,17 @@
 
 @section('Component')
 
+<div class="pagetitle">
+  <h1> @yield('title') </h1>
+  <nav>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">Home</li>
+      <li class="breadcrumb-item active">@yield('title') </li>
+      <li class="breadcrumb-item active">@yield('fn') @yield('mn') @yield('ln') @yield('sn')</li>
+    </ol>
+  </nav>
+</div>
+
 <section class="section profile">
     <div class="row">
       <div class="col-xl-4">

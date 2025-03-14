@@ -7,10 +7,15 @@
         <meta charset="utf-8">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>BCP - Student Information System</title>
+        <title>{{ config('app.name', 'Laravel') }}</title>
 
         @include('_partials.style')
+
+        <!-- Scripts -->
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
         
     </head>
 
@@ -21,17 +26,6 @@
         @include('_partials.sidebar')
 
         <main id="main" class="main">
-
-            <div class="pagetitle">
-              <h1> @yield('title') </h1>
-              <nav>
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item active">@yield('title') </li>
-                  <li class="breadcrumb-item active">@yield('fn') @yield('mn') @yield('ln') @yield('sn')</li>
-                </ol>
-              </nav>
-            </div>
 
             @yield('Component')
 
